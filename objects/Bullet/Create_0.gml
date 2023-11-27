@@ -1,2 +1,3 @@
 speed=10;
-direction=Player.image_angle;
+direction=objPlayer.image_angle;
+pierce=false;

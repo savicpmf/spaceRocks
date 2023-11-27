@@ -1,0 +1,1 @@
+y = sin(global.time * speed) * amplitude;
