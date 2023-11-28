@@ -7,9 +7,15 @@ if (powerUpActive)
   
 	if (powerUpType=="fastShoot")
 	{
-		if(keyboard_check(ord("J")))
+		if(keyboard_check(ord("J")) && bulletTimer<=0)
 		{
 			instance_create_layer(x,y,"Instances",Bullet);
+			bulletTimer = fastbulletDelay; // Reset the timer
+		}
+		
+		if (bulletTimer > 0)
+		{
+			bulletTimer -= 1;
 		}
 	}
 	
@@ -25,9 +31,9 @@ if (powerUpActive)
 	}
  
 	// reduces power up time
-    powerUpTime.powerUpDuration -= 1;
+    objPowerUpTime.powerUpDuration -= 1;
 
-    if (powerUpTime.powerUpDuration <= 0)
+    if (objPowerUpTime.powerUpDuration <= 0)
 	{
         // Power-up duration has expired
         powerUpActive = false;
@@ -43,13 +49,13 @@ else if keyboard_check_pressed(ord("J"))
 
 if keyboard_check(ord("W"))
 {
-	motion_add(image_angle,0.1)
+	if(speed<10)
+	{
+		motion_add(image_angle,0.1)
+	}
+	
 }
 
-if keyboard_check(ord("S"))
-{
-	motion_add(image_angle,-0.1)
-}
 
 if keyboard_check(ord("A"))
 {

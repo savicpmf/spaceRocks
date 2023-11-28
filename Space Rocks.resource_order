@@ -21,10 +21,11 @@
     {"name":"sprRockBig","order":2,"path":"sprites/sprRockBig/sprRockBig.yy",},
     {"name":"objPowerUp","order":4,"path":"objects/objPowerUp/objPowerUp.yy",},
     {"name":"Bullet","order":1,"path":"objects/Bullet/Bullet.yy",},
+    {"name":"powerUpTestRoom","order":1,"path":"rooms/powerUpTestRoom/powerUpTestRoom.yy",},
     {"name":"sprRockSmall","order":3,"path":"sprites/sprRockSmall/sprRockSmall.yy",},
     {"name":"pierceBullet","order":6,"path":"sprites/pierceBullet/pierceBullet.yy",},
     {"name":"fastShootPowerUp","order":4,"path":"sprites/fastShootPowerUp/fastShootPowerUp.yy",},
-    {"name":"powerUpTime","order":5,"path":"objects/powerUpTime/powerUpTime.yy",},
+    {"name":"objPowerUpTime","order":5,"path":"objects/objPowerUpTime/objPowerUpTime.yy",},
     {"name":"piercePowerUp","order":5,"path":"sprites/piercePowerUp/piercePowerUp.yy",},
   ],
 }
